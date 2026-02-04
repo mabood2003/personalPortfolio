@@ -4,7 +4,7 @@
 // =============================================================================
 
 export const personalInfo = {
-  name: "Mohamed Ali Abood",
+  name: "Mohamed Abood",
   title: "Software Engineer",
   tagline: "Building scalable web applications and ML-powered solutions",
   bio: "I'm a Software Engineering student at the University of Western Ontario with hands-on industry experience at Bell Canada. I've built and maintained production web applications serving 100+ users, migrated legacy systems to modern tech stacks, and developed ML-based prediction models. I enjoy working across the full stack — from RESTful API design and database migrations to data pipelines and front-end interfaces.",
@@ -42,6 +42,15 @@ export const experiences = [
     ],
   },
   {
+    company: "University of Western Ontario",
+    role: "Web Developer",
+    duration: "Sep 2023 – Apr 2024",
+    description: [
+      "Developed and maintained the Chemical Engineering department website used by 200+ students for tracking upcoming and past events",
+      "Built pages covering program information, event listings, and event history using HTML, CSS, and JavaScript",
+    ],
+  },
+  {
     company: "Bell Canada (BCE Inc)",
     role: "Student, Software Developer",
     duration: "May 2023 – Aug 2023",
@@ -59,7 +68,8 @@ export const education = [
     degree: "B.E.Sc. in Software Engineering",
     duration: "Sep 2021 – Apr 2026",
     description: [
-      "3.8 GPA",
+      "3.8 GPA — Dean's Honour List 3 times",
+      "Lorraine Ivey Scholarship & Entrance Scholarship recipient",
       "Coursework: Algorithms & Data Structures, Software Construction & Design, Database Management, Information Security, Cloud Computing, Machine Learning, Deep Learning & Computer Vision, Operating Systems, Computer Networks",
     ],
   },
