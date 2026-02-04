@@ -77,6 +77,14 @@ export const education = [
 
 export const projects = [
   {
+    title: "NBA Stat Predictor",
+    description:
+      "A chat-based NBA player prediction app powered by RAG and Google Gemini 2.0 Flash. Ask natural language questions like 'How many points will KD score tonight?' and receive data-backed predictions with confidence ratings, source citations, and real-time streaming via SSE. Features a hybrid retrieval pipeline combining PostgreSQL queries with ChromaDB vector search across 3 seasons of player data.",
+    techStack: ["React", "TypeScript", "FastAPI", "PostgreSQL", "ChromaDB", "Gemini API"],
+    github: "https://github.com/mabood2003/nbaBT",
+    live: "",
+  },
+  {
     title: "CRE Green Certification Navigator",
     description:
       "A GenAI-powered system that assesses commercial buildings against green certification standards (LEED, BOMA BEST, WELL) and generates upgrade roadmaps with cost estimates and ROI projections.",
