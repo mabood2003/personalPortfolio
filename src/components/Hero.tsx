@@ -2,6 +2,14 @@
 
 import Image from "next/image";
 import { personalInfo, socialLinks } from "@/data/portfolio";
+import TypeWriter from "./TypeWriter";
+
+const taglines = [
+  "Building scalable web applications",
+  "Crafting ML-powered solutions",
+  "Full-stack development",
+  "Creating elegant user experiences",
+];
 
 export default function Hero() {
   return (
@@ -19,24 +27,24 @@ export default function Hero() {
               src="/personalPortfolio/profile.png"
               alt={personalInfo.name}
               fill
-              className="rounded-full object-cover border-4 border-gray-800 shadow-2xl"
+              className="rounded-full object-cover border-4 border-gray-800 light:border-gray-300 shadow-2xl"
               priority
             />
-            <div className="absolute inset-0 rounded-full ring-2 ring-indigo-500/30 ring-offset-4 ring-offset-gray-950" />
+            <div className="absolute inset-0 rounded-full ring-2 ring-indigo-500/30 ring-offset-4 ring-offset-gray-950 light:ring-offset-white" />
           </div>
         </div>
 
         <p className="text-indigo-400 text-sm font-mono tracking-widest uppercase mb-4">
           Hello, world. I'm
         </p>
-        <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight">
+        <h1 className="text-6xl md:text-8xl font-bold text-white light:text-gray-900 leading-tight">
           {personalInfo.name}
         </h1>
         <h2 className="text-3xl md:text-5xl font-bold text-gray-500 mt-2">
           {personalInfo.title}
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto mt-6 leading-relaxed">
-          {personalInfo.tagline}
+        <p className="text-gray-400 light:text-gray-600 text-lg max-w-xl mx-auto mt-6 leading-relaxed h-8">
+          <TypeWriter texts={taglines} speed={80} deleteSpeed={40} pauseTime={2500} />
         </p>
 
         {/* Social icons row */}
