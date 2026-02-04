@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { personalInfo, socialLinks } from "@/data/portfolio";
 
 export default function Hero() {
@@ -11,6 +12,20 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-3xl">
+        {/* Profile Photo */}
+        <div className="mb-8">
+          <div className="relative w-36 h-36 mx-auto">
+            <Image
+              src="/personalPortfolio/profile.png"
+              alt={personalInfo.name}
+              fill
+              className="rounded-full object-cover border-4 border-gray-800 shadow-2xl"
+              priority
+            />
+            <div className="absolute inset-0 rounded-full ring-2 ring-indigo-500/30 ring-offset-4 ring-offset-gray-950" />
+          </div>
+        </div>
+
         <p className="text-indigo-400 text-sm font-mono tracking-widest uppercase mb-4">
           Hello, world. I'm
         </p>
