@@ -1,24 +1,45 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { personalInfo, skills } from "@/data/portfolio";
 
 export default function About() {
   return (
     <section id="about" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-2">About Me</h2>
-        <p className="text-indigo-400 font-mono text-sm mb-12">// who am I?</p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-bold text-white mb-2">About Me</h2>
+          <p className="text-indigo-400 font-mono text-sm mb-12">// who am I?</p>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-16">
           {/* Bio */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
             <p className="text-gray-400 text-lg leading-relaxed">
               {personalInfo.bio}
             </p>
-          </div>
+          </motion.div>
 
           {/* Skills */}
           <div className="flex flex-col gap-6">
-            {skills.map((group) => (
-              <div key={group.category}>
+            {skills.map((group, index) => (
+              <motion.div
+                key={group.category}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
                 <h3 className="text-white font-semibold text-sm uppercase tracking-widest mb-3">
                   {group.category}
                 </h3>
@@ -32,7 +53,7 @@ export default function About() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

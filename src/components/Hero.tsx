@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { personalInfo, socialLinks } from "@/data/portfolio";
 import TypeWriter from "./TypeWriter";
+import ParticleBackground from "./ParticleBackground";
 
 const taglines = [
   "Building scalable web applications",
@@ -14,6 +15,9 @@ const taglines = [
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 text-center relative">
+      {/* Particle background */}
+      <ParticleBackground />
+
       {/* Subtle gradient orb */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-96 h-96 rounded-full bg-indigo-600 opacity-10 blur-3xl" />

@@ -1,16 +1,30 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { projects } from "@/data/portfolio";
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-2">Projects</h2>
-        <p className="text-indigo-400 font-mono text-sm mb-12">// things I've built</p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-bold text-white mb-2">Projects</h2>
+          <p className="text-indigo-400 font-mono text-sm mb-12">// things I&apos;ve built</p>
+        </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <div
+          {projects.map((project, index) => (
+            <motion.div
               key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-indigo-800 transition-colors duration-200"
             >
               <div className="flex items-start justify-between">
@@ -49,7 +63,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,8 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { personalInfo, socialLinks } from "@/data/portfolio";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-800 py-10 px-6">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="border-t border-gray-800 py-10 px-6"
+    >
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-gray-600 text-sm">
           Designed & built by{" "}
@@ -22,6 +31,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

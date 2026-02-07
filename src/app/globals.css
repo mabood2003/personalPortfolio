@@ -92,3 +92,25 @@ html.light .bg-indigo-600 {
 html.light .opacity-10 {
   opacity: 0.05 !important;
 }
+
+/* Light mode form overrides */
+html.light input,
+html.light textarea {
+  background-color: #f9fafb !important;
+  border-color: #d1d5db !important;
+  color: #111827 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+html.light input:focus,
+html.light textarea:focus {
+  border-color: #6366f1 !important;
+}
+
+html.light .border-green-800 {
+  border-color: #86efac !important;
+}

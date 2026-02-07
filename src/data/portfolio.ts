@@ -102,6 +102,36 @@ export const projects = [
   },
 ];
 
+export const blogPosts = [
+  {
+    title: "Building a RAG-Powered NBA Prediction App",
+    excerpt:
+      "How I combined retrieval-augmented generation with Google Gemini to create a chat interface that predicts NBA player stats with source citations.",
+    date: "Jan 2025",
+    readTime: "8 min read",
+    tags: ["RAG", "GenAI", "React"],
+    url: "",
+  },
+  {
+    title: "Migrating a Legacy .NET App to Vue.js + TypeScript",
+    excerpt:
+      "Lessons learned from migrating a production application serving 100+ users from .NET MVC to a modern Vue.js frontend with a C# API backend.",
+    date: "Oct 2024",
+    readTime: "6 min read",
+    tags: ["Vue.js", "TypeScript", ".NET"],
+    url: "",
+  },
+  {
+    title: "Predicting TikTok Virality with Machine Learning",
+    excerpt:
+      "Training an XGBoost classifier on 50K videos to predict trend likelihood — from feature engineering to achieving 84% holdout accuracy.",
+    date: "Aug 2024",
+    readTime: "10 min read",
+    tags: ["ML", "Python", "XGBoost"],
+    url: "",
+  },
+];
+
 export const socialLinks = {
   github: "https://github.com/mabood2003",
   linkedin: "https://linkedin.com/in/Mohamed-abood",
