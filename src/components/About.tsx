@@ -14,7 +14,7 @@ export default function About() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-2">About Me</h2>
-          <p className="text-indigo-400 font-mono text-sm mb-12">// who am I?</p>
+          <p className="text-amber-400 font-mono text-sm mb-12">// who am I?</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-16">
@@ -25,7 +25,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-stone-400 text-lg leading-relaxed">
               {personalInfo.bio}
             </p>
           </motion.div>
@@ -47,7 +47,7 @@ export default function About() {
                   {group.items.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-gray-800 border border-gray-700 text-gray-300 text-sm rounded-full"
+                      className="px-3 py-1 bg-stone-800 border border-stone-700 text-stone-300 text-sm rounded-full"
                     >
                       {skill}
                     </span>

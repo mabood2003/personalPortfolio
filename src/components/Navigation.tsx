@@ -24,11 +24,11 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-gray-950/90 light:bg-white/90 backdrop-blur border-b border-gray-800 light:border-gray-200" : "bg-transparent"
+        scrolled ? "bg-stone-950/90 light:bg-white/90 backdrop-blur border-b border-stone-800 light:border-stone-200" : "bg-transparent"
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold text-white light:text-gray-900 tracking-tight">
+        <a href="#" className="text-xl font-bold text-white light:text-stone-900 tracking-tight">
           {"<Portfolio />"}
         </a>
 
@@ -39,7 +39,7 @@ export default function Navigation() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors duration-200 text-sm font-medium tracking-wide uppercase"
+                  className="text-stone-400 light:text-stone-600 hover:text-white light:hover:text-stone-900 transition-colors duration-200 text-sm font-medium tracking-wide uppercase"
                 >
                   {link.label}
                 </a>
@@ -54,7 +54,7 @@ export default function Navigation() {
           <ThemeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 flex flex-col gap-1.5 w-6"
+            className="text-stone-400 light:text-stone-600 hover:text-white light:hover:text-stone-900 flex flex-col gap-1.5 w-6"
             aria-label="Toggle menu"
           >
             <span
@@ -78,14 +78,14 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-950/95 light:bg-white/95 backdrop-blur border-t border-gray-800 light:border-gray-200 px-6 py-4">
+        <div className="md:hidden bg-stone-950/95 light:bg-white/95 backdrop-blur border-t border-stone-800 light:border-stone-200 px-6 py-4">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors duration-200 text-sm font-medium tracking-wide uppercase"
+                  className="text-stone-400 light:text-stone-600 hover:text-white light:hover:text-stone-900 transition-colors duration-200 text-sm font-medium tracking-wide uppercase"
                 >
                   {link.label}
                 </a>

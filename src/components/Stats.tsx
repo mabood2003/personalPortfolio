@@ -11,7 +11,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-16 px-6 border-y border-gray-800 light:border-gray-200 bg-gray-900/50 light:bg-gray-100/50">
+    <section className="py-16 px-6 border-y border-stone-800 light:border-stone-200 bg-stone-900/50 light:bg-stone-100/50">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -23,10 +23,10 @@ export default function Stats() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-indigo-400 mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400 mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-400 light:text-gray-600 text-sm uppercase tracking-widest">
+              <div className="text-stone-400 light:text-stone-600 text-sm uppercase tracking-widest">
                 {stat.label}
               </div>
             </motion.div>

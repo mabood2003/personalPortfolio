@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030712;
-  --foreground: #f3f4f6;
+  --background: #0c0a09;
+  --foreground: #fafaf9;
 }
 
 html.light {
-  --background: #ffffff;
-  --foreground: #111827;
+  --background: #fafaf9;
+  --foreground: #1c1917;
 }
 
 @theme inline {
@@ -25,68 +25,68 @@ body {
 }
 
 /* Light mode overrides */
-html.light .bg-gray-950 {
-  background-color: #ffffff !important;
+html.light .bg-stone-950 {
+  background-color: #fafaf9 !important;
 }
 
-html.light .bg-gray-950\/90 {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+html.light .bg-stone-950\/90 {
+  background-color: rgba(250, 250, 249, 0.9) !important;
 }
 
-html.light .bg-gray-900 {
-  background-color: #f9fafb !important;
+html.light .bg-stone-900 {
+  background-color: #f5f5f4 !important;
 }
 
-html.light .bg-gray-900\/50 {
-  background-color: rgba(249, 250, 251, 0.5) !important;
+html.light .bg-stone-900\/50 {
+  background-color: rgba(245, 245, 244, 0.5) !important;
 }
 
-html.light .bg-gray-800 {
-  background-color: #f3f4f6 !important;
+html.light .bg-stone-800 {
+  background-color: #e7e5e4 !important;
 }
 
 html.light .text-white {
-  color: #111827 !important;
+  color: #1c1917 !important;
 }
 
-html.light .text-gray-100 {
-  color: #1f2937 !important;
+html.light .text-stone-100 {
+  color: #292524 !important;
 }
 
-html.light .text-gray-300 {
-  color: #4b5563 !important;
+html.light .text-stone-300 {
+  color: #57534e !important;
 }
 
-html.light .text-gray-400 {
-  color: #6b7280 !important;
+html.light .text-stone-400 {
+  color: #78716c !important;
 }
 
-html.light .text-gray-500 {
-  color: #6b7280 !important;
+html.light .text-stone-500 {
+  color: #78716c !important;
 }
 
-html.light .border-gray-800 {
-  border-color: #e5e7eb !important;
+html.light .border-stone-800 {
+  border-color: #d6d3d1 !important;
 }
 
-html.light .border-gray-700 {
-  border-color: #d1d5db !important;
+html.light .border-stone-700 {
+  border-color: #d6d3d1 !important;
 }
 
 html.light .hover\:text-white:hover {
-  color: #111827 !important;
+  color: #1c1917 !important;
 }
 
-html.light .hover\:bg-gray-700:hover {
-  background-color: #e5e7eb !important;
+html.light .hover\:bg-stone-700:hover {
+  background-color: #d6d3d1 !important;
 }
 
-html.light .ring-offset-gray-950 {
-  --tw-ring-offset-color: #ffffff !important;
+html.light .ring-offset-stone-950 {
+  --tw-ring-offset-color: #fafaf9 !important;
 }
 
-html.light .bg-indigo-600 {
-  background-color: #4f46e5 !important;
+html.light .bg-amber-600 {
+  background-color: #d97706 !important;
 }
 
 html.light .opacity-10 {
@@ -96,19 +96,19 @@ html.light .opacity-10 {
 /* Light mode form overrides */
 html.light input,
 html.light textarea {
-  background-color: #f9fafb !important;
-  border-color: #d1d5db !important;
-  color: #111827 !important;
+  background-color: #f5f5f4 !important;
+  border-color: #d6d3d1 !important;
+  color: #1c1917 !important;
 }
 
 html.light input::placeholder,
 html.light textarea::placeholder {
-  color: #9ca3af !important;
+  color: #a8a29e !important;
 }
 
 html.light input:focus,
 html.light textarea:focus {
-  border-color: #6366f1 !important;
+  border-color: #f59e0b !important;
 }
 
 html.light .border-green-800 {

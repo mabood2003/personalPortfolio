@@ -5,7 +5,7 @@ import { blogPosts } from "@/data/portfolio";
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-24 px-6 bg-gray-950">
+    <section id="blog" className="py-24 px-6 bg-stone-950">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,7 +14,7 @@ export default function Blog() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-2">Blog</h2>
-          <p className="text-indigo-400 font-mono text-sm mb-12">
+          <p className="text-amber-400 font-mono text-sm mb-12">
             // thoughts & writeups
           </p>
         </motion.div>
@@ -30,23 +30,23 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`group bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col gap-4 transition-colors duration-200 ${
+              className={`group bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col gap-4 transition-colors duration-200 ${
                 post.url
-                  ? "hover:border-indigo-800 cursor-pointer"
+                  ? "hover:border-amber-800 cursor-pointer"
                   : "cursor-default"
               }`}
             >
-              <div className="flex items-center gap-3 text-xs text-gray-500">
+              <div className="flex items-center gap-3 text-xs text-stone-500">
                 <span>{post.date}</span>
-                <span className="w-1 h-1 rounded-full bg-gray-700" />
+                <span className="w-1 h-1 rounded-full bg-stone-700" />
                 <span>{post.readTime}</span>
               </div>
 
-              <h3 className="text-white font-semibold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+              <h3 className="text-white font-semibold text-lg leading-snug group-hover:text-amber-400 transition-colors">
                 {post.title}
               </h3>
 
-              <p className="text-gray-500 text-sm leading-relaxed flex-1">
+              <p className="text-stone-500 text-sm leading-relaxed flex-1">
                 {post.excerpt}
               </p>
 
@@ -54,7 +54,7 @@ export default function Blog() {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs text-indigo-400 bg-indigo-950 border border-indigo-900 px-2.5 py-1 rounded-full"
+                    className="text-xs text-amber-400 bg-amber-950 border border-amber-900 px-2.5 py-1 rounded-full"
                   >
                     {tag}
                   </span>
@@ -62,7 +62,7 @@ export default function Blog() {
               </div>
 
               {post.url && (
-                <span className="text-indigo-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-amber-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                   Read more
                   <svg
                     width="14"

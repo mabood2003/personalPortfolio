@@ -14,7 +14,7 @@ export default function Projects() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-2">Projects</h2>
-          <p className="text-indigo-400 font-mono text-sm mb-12">// things I&apos;ve built</p>
+          <p className="text-amber-400 font-mono text-sm mb-12">// things I&apos;ve built</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -25,11 +25,11 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-indigo-800 transition-colors duration-200"
+              className="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col gap-4 hover:border-amber-800 transition-colors duration-200"
             >
               <div className="flex items-start justify-between">
                 <h3 className="text-white font-semibold text-lg">{project.title}</h3>
-                <div className="flex gap-3 text-gray-600 hover:text-gray-400">
+                <div className="flex gap-3 text-stone-600 hover:text-stone-400">
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub`}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -49,7 +49,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <p className="text-gray-500 text-sm leading-relaxed flex-1">
+              <p className="text-stone-500 text-sm leading-relaxed flex-1">
                 {project.description}
               </p>
 
@@ -57,7 +57,7 @@ export default function Projects() {
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs text-indigo-400 bg-indigo-950 border border-indigo-900 px-2.5 py-1 rounded-full"
+                    className="text-xs text-amber-400 bg-amber-950 border border-amber-900 px-2.5 py-1 rounded-full"
                   >
                     {tech}
                   </span>

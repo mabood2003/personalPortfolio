@@ -20,7 +20,7 @@ export default function Hero() {
 
       {/* Subtle gradient orb */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-96 h-96 rounded-full bg-indigo-600 opacity-10 blur-3xl" />
+        <div className="w-96 h-96 rounded-full bg-amber-600 opacity-10 blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-3xl">
@@ -31,23 +31,23 @@ export default function Hero() {
               src="/personalPortfolio/profile.png"
               alt={personalInfo.name}
               fill
-              className="rounded-full object-cover border-4 border-gray-800 light:border-gray-300 shadow-2xl"
+              className="rounded-full object-cover border-4 border-stone-800 light:border-stone-300 shadow-2xl"
               priority
             />
-            <div className="absolute inset-0 rounded-full ring-2 ring-indigo-500/30 ring-offset-4 ring-offset-gray-950 light:ring-offset-white" />
+            <div className="absolute inset-0 rounded-full ring-2 ring-amber-500/30 ring-offset-4 ring-offset-stone-950 light:ring-offset-white" />
           </div>
         </div>
 
-        <p className="text-indigo-400 text-sm font-mono tracking-widest uppercase mb-4">
+        <p className="text-amber-400 text-sm font-mono tracking-widest uppercase mb-4">
           Hello, world. I'm
         </p>
-        <h1 className="text-6xl md:text-8xl font-bold text-white light:text-gray-900 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-bold text-white light:text-stone-900 leading-tight">
           {personalInfo.name}
         </h1>
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-500 mt-2">
+        <h2 className="text-3xl md:text-5xl font-bold text-stone-500 mt-2">
           {personalInfo.title}
         </h2>
-        <p className="text-gray-400 light:text-gray-600 text-lg max-w-xl mx-auto mt-6 leading-relaxed h-8">
+        <p className="text-stone-400 light:text-stone-600 text-lg max-w-xl mx-auto mt-6 leading-relaxed h-8">
           <TypeWriter texts={taglines} speed={80} deleteSpeed={40} pauseTime={2500} />
         </p>
 
@@ -57,7 +57,7 @@ export default function Hero() {
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-white transition-colors duration-200"
+            className="text-stone-500 hover:text-white transition-colors duration-200"
             aria-label="GitHub"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -68,7 +68,7 @@ export default function Hero() {
             href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-white transition-colors duration-200"
+            className="text-stone-500 hover:text-white transition-colors duration-200"
             aria-label="LinkedIn"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -77,7 +77,7 @@ export default function Hero() {
           </a>
           <a
             href={socialLinks.email}
-            className="text-gray-500 hover:text-white transition-colors duration-200"
+            className="text-stone-500 hover:text-white transition-colors duration-200"
             aria-label="Email"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -90,7 +90,7 @@ export default function Hero() {
         {/* CTA */}
         <a
           href="#projects"
-          className="inline-block mt-10 px-8 py-3 border border-indigo-500 text-indigo-400 rounded-lg text-sm font-medium hover:bg-indigo-500 hover:text-white transition-all duration-200"
+          className="inline-block mt-10 px-8 py-3 border border-amber-500 text-amber-400 rounded-lg text-sm font-medium hover:bg-amber-500 hover:text-white transition-all duration-200"
         >
           View My Work
         </a>

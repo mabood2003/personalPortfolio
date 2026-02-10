@@ -29,14 +29,14 @@ export default function ThemeToggle() {
   // Avoid hydration mismatch
   if (!mounted) {
     return (
-      <button className="p-2 rounded-lg bg-gray-800 w-9 h-9" aria-label="Toggle theme" />
+      <button className="p-2 rounded-lg bg-stone-800 w-9 h-9" aria-label="Toggle theme" />
     );
   }
 
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
+      className="p-2 rounded-lg bg-stone-800 hover:bg-stone-700 transition-colors duration-200"
       aria-label="Toggle theme"
     >
       {isDark ? (
@@ -71,7 +71,7 @@ export default function ThemeToggle() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-indigo-400"
+          className="text-amber-400"
         >
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
