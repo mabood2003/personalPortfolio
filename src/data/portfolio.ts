@@ -100,6 +100,14 @@ export const projects = [
     github: "",
     live: "",
   },
+  {
+    title: "Personal Finance Tracker",
+    description:
+      "A full-stack personal finance application for tracking accounts, transactions, budgets, and spending analytics. Features JWT authentication, double-entry ledger transfers with idempotency, recurring transaction automation, scheduled budget cycle rollover, and multi-month analytics with JPQL aggregation queries.",
+    techStack: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Tailwind CSS", "Docker", "Flyway"],
+    github: "",
+    live: "",
+  },
 ];
 
 export const blogPosts = [
